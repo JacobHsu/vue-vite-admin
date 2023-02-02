@@ -12,15 +12,15 @@ export const columns: BasicColumn[] = [
     width: 200,
   },
   {
-    title: '角色值',
+    title: '帐号',
     dataIndex: 'roleValue',
     width: 180,
   },
-  {
-    title: '排序',
-    dataIndex: 'orderNo',
-    width: 50,
-  },
+  // {
+  //   title: '排序',
+  //   dataIndex: 'orderNo',
+  //   width: 50,
+  // },
   {
     title: '状态',
     dataIndex: 'status',
@@ -55,13 +55,13 @@ export const columns: BasicColumn[] = [
   },
   {
     title: '创建时间',
-    dataIndex: 'createTime',
+    dataIndex: 'createdOn',
     width: 180,
   },
-  {
-    title: '备注',
-    dataIndex: 'remark',
-  },
+  // {
+  //   title: '备注',
+  //   dataIndex: 'remark',
+  // },
 ];
 
 export const searchFormSchema: FormSchema[] = [
@@ -94,7 +94,7 @@ export const formSchema: FormSchema[] = [
   },
   {
     field: 'roleValue',
-    label: '角色值',
+    label: '帐号',
     required: true,
     component: 'Input',
   },
@@ -115,10 +115,10 @@ export const formSchema: FormSchema[] = [
     field: 'remark',
     component: 'InputTextArea',
   },
-  {
-    label: ' ',
-    field: 'menu',
-    slot: 'menu',
-    component: 'Input',
-  },
+  // {
+  //   label: ' ',
+  //   field: 'menu',
+  //   slot: 'menu',
+  //   component: 'Input',
+  // },
 ];

@@ -54,7 +54,7 @@
           schemas: searchFormSchema,
         },
         useSearchForm: true,
-        showTableSetting: true,
+        showTableSetting: false,
         bordered: true,
         showIndexColumn: false,
         actionColumn: {

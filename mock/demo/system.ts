@@ -22,13 +22,16 @@ const roleList = (() => {
   const result: any[] = [];
   for (let index = 0; index < 4; index++) {
     result.push({
-      id: index + 1,
-      orderNo: `${index + 1}`,
+      id: '@first', // index + 1,
+      password: '@string(10)',
+      roleId: 1,
+      // orderNo: `${index + 1}`,
       roleName: ['超级管理员', '管理员', '文章管理员', '普通用户'][index],
       roleValue: '@first',
-      createTime: '@datetime',
-      remark: '@cword(10,20)',
-      menu: [['0', '1', '2'], ['0', '1'], ['0', '2'], ['2']][index],
+      createdOn: '@datetime', // createTime
+      createdBy: 'admin',
+      remark: '@cword(5,10)',
+      // menu: [['0', '1', '2'], ['0', '1'], ['0', '2'], ['2']][index],
       'status|1': ['0', '1'],
     });
   }
